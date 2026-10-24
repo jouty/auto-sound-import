@@ -74,6 +74,14 @@ Hooks.once("init", () => {
 
 Hooks.once("ready", () => {
   game.modules.get(MODULE_ID).api = { runImport };
+  if (game.user.isGM && !game.macros.getName("Importer les sons")) {
+    Macro.create({
+      name: "Importer les sons",
+      type: "script",
+      img: "icons/svg/sound.svg",
+      command: `game.modules.get("${MODULE_ID}").api.runImport();`
+    });
+  }
   const isActiveGM = game.users.activeGM ? game.user === game.users.activeGM : game.user.isGM;
   if (isActiveGM && game.settings.get(MODULE_ID, "auto")) runImport({ silent: true });
 });

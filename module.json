@@ -5,5 +5,8 @@
   "version": "1.0.0",
   "authors": [{ "name": "Kriss_prolls" }],
   "compatibility": { "minimum": "12", "verified": "14" },
+  "url": "https://github.com/jouty/auto-sound-import",
+  "manifest": "https://raw.githubusercontent.com/jouty/auto-sound-import/refs/heads/master/module.json",
+  "download": "https://github.com/jouty/auto-sound-import/archive/refs/heads/master.zip",
   "esmodules": ["scripts/main.js"]
 }

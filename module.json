@@ -1,0 +1,9 @@
+{
+  "id": "auto-sound-import",
+  "title": "Auto Sound Import",
+  "description": "Importe automatiquement les sons d'un dossier (récursif) en playlists, une par dossier, au chargement du monde.",
+  "version": "1.0.0",
+  "authors": [{ "name": "Kriss_prolls" }],
+  "compatibility": { "minimum": "12", "verified": "14" },
+  "esmodules": ["scripts/main.js"]
+}
